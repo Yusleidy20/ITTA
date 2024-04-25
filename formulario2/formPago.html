@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de compra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="formPago.css">
+
+</head>
+<body>
+<div class="body">
+    <div class="body1">
+    <div class="contenedor">
+        <form action="#">
+            <div class="seccion1">
+                <div class="seccion1 seccion-flex">
+                    <h2 class="titulo">Contacto</h2>
+                    <a href="" class="a-session"><p >Iniciar sesión</p></a>
+                </div>                
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+                <label for="enviarNovedades">
+                <label for="check"></label><input type="checkbox" name="" id="check" >
+                <span class="checkbox">Enviarme novedades y ofertas por correo electrónico</span>
+            </label>
+            </div>
+
+            <div class="seccion">
+                <h2 class="titulo">Entrega</h2>
+                <div>
+                    <label for="">País/Región</label>
+                    <select name="pais" id="pais" >
+                        <option value="Colombia">Colombia</option>
+                    </select>
+                </div>
+                <div class="inputs-nomApe">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombres" required>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                </div>
+                <input type="number" id="cedula" name="cedula" placeholder="Número de cédula" required>
+                <input type="text" id="direccion" name="direccion" placeholder="Dirección" required>
+                <input type="text" id="direccion" name="direccion" placeholder="Barrio, urbanización,apartamento, etc" required>
+                <div class="inputs-localidad">
+                <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required>
+                <select id="departamento" name="departamento">
+                    <option value="AMA">Amazonas</option>
+                    <option value="ANT">Antioquia</option>
+                    <option value="ARA">Arauca</option>
+                    <option value="ATL">Atlántico</option>
+                    <option value="BOL">Bolívar</option>
+                    <option value="BOY">Boyacá</option>
+                    <option value="CAL">Caldas</option>
+                    <option value="CAQ">Caquetá</option>
+                    <option value="CAS">Casanare</option>
+                    <option value="CAT">Cauca</option>
+                    <option value="CES">Cesar</option>
+                    <option value="CHO">Chocó</option>
+                    <option value="COR">Córdoba</option>
+                    <option value="CUN">Cundinamarca</option>
+                    <option value="GUA">Guainía</option>
+                    <option value="GUV">Guaviare</option>
+                    <option value="HUI">Huila</option>
+                    <option value="LAG">La Guajira</option>
+                    <option value="MAG">Magdalena</option>
+                    <option value="MET">Meta</option>
+                    <option value="NAR">Nariño</option>
+                    <option value="NSA">Norte de Santander</option>
+                    <option value="PUT">Putumayo</option>
+                    <option value="QUI">Quindío</option>
+                    <option value="RIS">Risaralda</option>
+                    <option value="SAN">San Andrés, Providencia y Santa Catalina</option>
+                    <option value="SAP">Santander</option>
+                    <option value="SUC">Sucre</option>
+                    <option value="TOL">Tolima</option>
+                    <option value="VAL">Valle del Cauca</option>
+                    <option value="VAU">Vaupés</option>
+                    <option value="VIC">Vichada</option>
+                </select>
+                <input type="number" id="codigo_postal" name="codigo_postal" placeholder="Código postal" required>
+            </div>
+                <input type="number" id="telefono" name="telefono" placeholder="Teléfono" required>
+                <label for="check"></label><input type="checkbox" name="" id="check" >
+                <span class="checkbox">Guardar mi información y consultar más rápidamente la próxima vez</span>
+            </label>
+            </div>
+
+            <div class="container">
+                <h2 class="titulo">Métodos de pago</h2>
+                <div class="opcion">
+                    <label for="opcion1">
+                        <input type="radio" id="opcion1" name="grupo_opciones" value="opcion1" checked>
+                        <span>Envío a Cúcuta ($8.000)</span>
+                    </label>
+                </div>
+                <div class="opcion">
+                    <label for="opcion2">
+                        <input type="radio" id="opcion2" name="grupo_opciones" value="opcion2">
+                        <span>Envío al resto del Norte de Santander ($13.000)</span>
+                    </label>
+                </div>
+                <div class="opcion">
+                    <label for="opcion3">
+                        <input type="radio" id="opcion3" name="grupo_opciones" value="opcion3">
+                        <span>Envío al resto de Colombia ($20.000)</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="seccion-metodo-pago">
+                <h2 class="titulo">Métodos de pago</h2>
+                <label for="metodo_pago1">
+
+                    <input type="radio" id="metodo_pago1" name="grupo_pago" onclick="mostrarContenido(1)">Checkout Mercado Pago
+                    <img src="img/svg/svg1.svg" alt=""><img src="img/svg/svg2.svg"><img src="img/svg/svg3.svg" alt="">                    <img src="img/svg/svg4.svg" alt="">
+                </label>
+                <label for="metodo_pago2">
+                    <input type="radio" id="metodo_pago2" name="grupo_pago" onclick="mostrarContenido(2)">Paga a Crédito o Débito
+                    <img src="img/svg/svg5.svg" alt="">
+                </label>
+                <div id="contenido1" style="display: none; text-align: center;">
+                    <img src="img/img1.png" alt="" width="400px" height="200px" style="margin: auto;">
+                    <p style="text-align: center; margin: auto; width: 80%;">Luego de hacer clic en “Pagar ahora”, serás redirigido a Checkout Mercado Pago para completar tu compra de forma segura.</p>
+                </div>
+                <div id="contenido2" style="display: none; text-align: center;">
+                    <img src="img/img1.png" alt="" width="400px" height="200px" style="margin: auto;">
+                    <p style="text-align: center; margin: auto; width: 80%;">Luego de hacer clic en “Pagar ahora”, serás redirigido a Paga a Crédito o Débito para completar tu compra de forma segura.</p>
+                </div>
+                
+            </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="    width: 100%; /* Ancho completo */
+            padding: 10px; /* Relleno interno */
+            border: 1px solid #cccccc; /* Borde gris claro */
+            background-color: #FED9D1;
+            border-radius: 5px; /* Bordes redondeados */
+            font-size: 14px; /* Tamaño de fuente */
+            margin-bottom: 15px; /* Margen inferior */
+            font-family: Poppins, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 20px;
+            margin-top: 50px;
+            margin-bottom: 10px;">Pagar ahora</button>
+        </form>
+    </div>
+</div>
+
+<div class="body2">
+  <div class="containers">
+    <h1>Carrito de Compra</h1>
+    <div class="productos">
+      <div class="producto">
+        <img src="../imgProduct2/color1.jpeg" alt="Producto 1">
+        <div class="detalle-producto">
+          <h2>Vestidos Preppy</h2>
+          <p>Precio: $180.000</p>
+          <label for="cantidadProducto1">Cantidad:</label>
+          <input type="number" id="cantidadProducto1" value="1" min="1">
+        </div>
+      </div>
+      <div class="producto">
+        <img src="../imgProduct2/color2.jpeg" alt="Producto 2">
+        <div class="detalle-producto">
+          <h2>Vestidos Preppy</h2>
+          <p>Precio: $180.000</p>
+          <label for="cantidadProducto2">Cantidad:</label>
+          <input type="number" id="cantidadProducto2" value="1" min="1">
+        </div>
+      </div>
+      <!-- Agrega más productos aquí -->
+    </div>
+
+    <!-- Descuentos y otros elementos debajo de los productos -->
+    <div class="descuentos-y-otros">
+      <div class="descuento">
+        <label for="descuento">Descuento:</label>
+        <input type="number" id="descuento" placeholder="Ingrese el descuento">
+        <button id="aplicarDescuento">Aplicar</button>
+      </div>
+
+      <div class="subtotal">
+        <p>Subtotal</p>
+        <p>$ <span id="subtotal">10.000</span></p>
+      </div>
+      <div class="envio">
+        <p>Métodos de envío</p>
+        <p>$ 360.000</p>
+      </div>
+      <div class="total">
+        <p>Total</p>
+        <p>COP $ <span id="total">0.00</span></p>
+        <br>
+      </div>
+      <div class="total">
+        <p>Incluye $ 11.176,47 de impuestos</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">PAGO</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="pago-exitoso">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check" width="72" height="72" viewBox="0 0 24 24" stroke-width="2" stroke="#4CAF50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M8 12l2 2 4-4"></path>
+                </svg>
+                <h3>Pago Exitoso</h3>
+                <p>Tu pago se ha realizado correctamente. ¡Gracias por tu compra!</p>
+            </div>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="script.js"></script>
+    <script>function mostrarContenido(opcion) {
+        if (opcion === 1) {
+            document.getElementById('contenido1').style.display = 'block';
+            document.getElementById('contenido2').style.display = 'none';
+        } else {
+            document.getElementById('contenido1').style.display = 'none';
+            document.getElementById('contenido2').style.display = 'block';
+        }
+      }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

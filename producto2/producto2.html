@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="producto2.css">
+</head>
+<body>
+    <header>
+        <img class="imgLogo" src="../img/logo.jpeg" alt="">
+    </header>
+
+    <div class="container-title">Vestidos Preppy</div>
+
+    <main>
+        <div class="container-img">
+            <img id="productImage" src="../img/diseño4.jpeg" alt="imagen-producto"/>
+        </div>
+        <div class="container-info-product">
+            <div class="container-price">
+                <span>$180.000</span>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <div class="container-details-product">
+                <div class="form-group">
+                    <label for="colour">Color</label>
+                    <div class="from__colors " id="color1" onclick="changeImage('../imgProduct2/color1.jpeg')"></div>
+                    <div class="from__colors " id="color2" onclick="changeImage('../imgProduct2/color2.jpeg')"></div>
+                    <div class="from__colors " id="color3" onclick="changeImage('../imgProduct2/color3.jpeg')"></div>
+                    <div class="from__colors " id="color4" onclick="changeImage('../imgProduct2/color4.jpeg')"></div>
+                    <div class="from__colors " id="color5" onclick="changeImage('../imgProduct2/color5.jpeg')"></div>
+                    <div class="from__colors " id="color6" onclick="changeImage('../imgProduct2/color6.jpeg')"></div>
+                    <div class="from__colors " id="color7" onclick="changeImage('../imgProduct2/color7.jpeg')"></div>
+                </div>
+                <div class="form-group">
+                    <label for="size">Talla</label>
+                    <div class="from__tallas talla1">Talla: 2</div>
+                    <div class="from__tallas talla1">Talla: 4</div>
+                    <div class="from__tallas talla1">Talla: 6</div>
+                    <div class="from__tallas talla1">Talla: 8</div>
+                </div>
+            </div>
+
+            <div class="container-add-cart">
+                <div class="container-quantity">
+                    <input
+                        type="number"
+                        placeholder="1"
+                        value="1"
+                        min="1"
+                        class="input-quantity"
+                    />
+                    <div class="btn-increment-decrement">
+                        <i class="fa-solid fa-chevron-up" id="increment"></i>
+                        <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                    </div>
+                </div>
+                <button class="btn-add-to-cart">
+                    <a href="../formulario2/formPago.html"><i class="fa-solid fa-plus"></i>
+                        Comprar</a>
+                    
+                </button>
+            </div>
+
+            <div class="container-description">
+                <div class="title-description">
+                    <h4>Descripción</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-description">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Laboriosam iure provident atque voluptatibus
+                        reiciendis quae rerum, maxime placeat enim cupiditate
+                        voluptatum, temporibus quis iusto. Enim eum qui delectus
+                        deleniti similique? Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. Sint autem magni earum est
+                        dolorem saepe perferendis repellat ipsam laudantium cum
+                        assumenda quidem quam, vero similique? Iusto officiis
+                        quod blanditiis iste?
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-additional-information">
+                <div class="title-additional-information">
+                    <h4>Información adicional</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-additional-information hidden">
+                    <p>-----------</p>
+                </div>
+            </div>
+
+            <div class="container-reviews">
+                <div class="title-reviews">
+                    <h4>Reseñas</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-reviews hidden">
+                    <p>-----------</p>
+                </div>
+            </div>
+
+            <div class="container-social">
+                <span>Compartir</span>
+                <div class="container-buttons-social">
+
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="container-related-products">
+        <h2>Productos Relacionados</h2>
+        <div class="card-list-products">
+            <div class="card">
+                <div class="card-img">
+                    <img
+                        src="../img/diseño2.jpeg"
+                        alt="producto-1"
+                    />
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Vestido Casual</h3>
+                        <p class="category">Niña, Vestido</p>
+                    </div>
+                    <div class="price">$180.000</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img
+                        src="../img/diseño3.jpeg"
+                        alt="producto-2"
+                    />
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Vestido Deportivo</h3>
+                        <p class="category">Niña, Vestido</p>
+                    </div>
+                    <div class="price">$190.000</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img
+                        src="../img/diseño4.jpeg"
+                        alt="producto-3"
+                    />
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Vestido Urban-chic</h3>
+                        <p class="category">Niñas, Vestido</p>
+                    </div>
+                    <div class="price">$180.000</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img
+                        src="../img/diseño1.jpeg"
+                        alt="producto-4"
+                    />
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Vestidos Preppy</h3>
+                        <p class="category">Niña, Vestido</p>
+                    </div>
+                    <div class="price">$190.000</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img
+                        src="../img/diseño5.jpeg"
+                        alt="producto-4"
+                    />
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Vestidos Urbano</h3>
+                        <p class="category">Niña, Vestido</p>
+                    </div>
+                    <div class="price">$180.000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-top section">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <img src="../img/logo.jpeg" width="80" height="60" alt="Footcap logo">
+                    </a>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-link-box">
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Contactanos</p>
+                        </li>
+
+                        <li>
+                            <address class="footer-link">
+                                <ion-icon name="location"></ion-icon>
+
+                                <span class="footer-link-text">
+                                    2751 S Parker Rd, Aurora, CO 80014, Colombia
+                                </span>
+                            </address>
+                        </li>
+
+                        <li>
+                            <a href="tel:+557343673257" class="footer-link">
+                                <ion-icon name="call"></ion-icon>
+
+                                <span class="footer-link-text">+573343673257</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:footcap@help.com" class="footer-link">
+                                <ion-icon name="mail"></ion-icon>
+
+                                <span class="footer-link-text">itta@help.com</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Mi cuenta</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                                <span class="footer-link-text">Mi cuenta</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                                <span class="footer-link-text">Ver carrito</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                                <span class="footer-link-text">Lista de deseos</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                                <span class="footer-link-text">Compara</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                                <span class="footer-link-text">Nuevos productos</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="footer-list">
+
+                        <p class="footer-list-title">Hora apertura</p>
+
+                        <table class="footer-table">
+                            <tbody>
+
+                                <tr class="table-row">
+                                    <th class="table-head" scope="row">Vie - Sab:</th>
+
+                                    <td class="table-data">8AM - 10PM</td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <th class="table-head" scope="row">Lun:</th>
+
+                                    <td class="table-data">8AM - 7PM</td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <th class="table-head" scope="row">Mar:</th>
+
+                                    <td class="table-data">7AM - 12PM</td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <th class="table-head" scope="row">Mie:</th>
+
+                                    <td class="table-data">9AM - 8PM</td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <th class="table-head" scope="row">Jue:</th>
+
+                                    <td class="table-data">Cerrado</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="footer-list">
+
+                        <p class="footer-list-title">Boletín</p>
+
+                        <p class="newsletter-text">
+                            Transforme con autoridad las potencialidades 24/7 con asociaciones sin errores.
+                        </p>
+
+                        <form action="" class="newsletter-form">
+                            <input type="email" name="email" required placeholder="Correo Electronico"
+                                class="newsletter-input">
+
+                            <button type="submit" class="btn btn-primary">Suscribete</button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; 2024 <a href="#" class="copyright-link">ITTA</a>. Todos los derechos reservados
+                </p>
+
+            </div>
+        </div>
+
+    </footer>
+    <a href="#top" class="go-top-btn" data-go-top>
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+    <script src="producto2.js"></script>
+</body>
+</html>
